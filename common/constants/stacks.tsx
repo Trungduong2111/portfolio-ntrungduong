@@ -37,7 +37,6 @@ import {
   SiCucumber,
   SiSelenium,
   SiTestinglibrary,
-  SiPlaywright,
 } from 'react-icons/si';
 
 export type SkillProps = {

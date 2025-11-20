@@ -1,7 +1,7 @@
 export const METADATA = {
   creator: "ntrungduong",
   description: "Personal website, portfolio, blog",
-  keyword: "satria, ntrungduong",
+  keyword: "ntrungduong",
   authors: {
     name: "ntrungduong",
     url: process.env.DOMAIN,
@@ -12,5 +12,5 @@ export const METADATA = {
     locale: "id-ID",
   },
   exTitle: "| ntrungduong",
-  profile: "/images/satria.jpg",
+  profile: "/images/ntrungduong-7.png",
 };

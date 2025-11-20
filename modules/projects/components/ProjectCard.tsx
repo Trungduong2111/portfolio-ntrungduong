@@ -50,7 +50,7 @@ const ProjectCard = ({
           <p className="text-sm leading-relaxed text-neutral-500 dark:text-neutral-400">
             {trimmedContent}
           </p>
-          <div className="flex flex-wrap items-center gap-3 pt-2">
+          {/* <div className="flex flex-wrap items-center gap-3 pt-2">
             {stacks.map((stack: string, index: number) => {
               const stackData = STACKS[stack];
 
@@ -60,7 +60,7 @@ const ProjectCard = ({
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </SpotlightCard>
     </Link>

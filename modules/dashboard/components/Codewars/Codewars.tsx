@@ -26,7 +26,7 @@ const Codewars = ({ endpoint }: CodewarsProps) => {
     setData({
       id: '65d0d330a5f244004320b688',
       username: 'satriabahari',
-      name: 'satria bahari',
+      name: 'ntrungduong',
       honor: 57,
       clan: 'Web Programming UNPAS',
       leaderboardPosition: null,

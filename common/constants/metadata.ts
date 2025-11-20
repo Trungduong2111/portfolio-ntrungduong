@@ -9,7 +9,7 @@ export const METADATA = {
   openGraph: {
     url: process.env.DOMAIN,
     siteName: "ntrungduong",
-    locale: "id-ID",
+    locale: "vi-VI",
   },
   exTitle: "| ntrungduong",
   profile: "/images/ntrungduong-7.png",

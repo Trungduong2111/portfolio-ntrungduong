@@ -1,5 +1,5 @@
-  <h1>satriabahari.my.id</h1>
-  <p>🔥 Personal website was built originally from scratch using Next.js, TypeScript, Tailwind CSS, SWR, Supabase and more.</p> 
+  <h1>ntrungduong</h1>
+    <p>🔥 Personal website of <strong>ntrungduong</strong>, built from scratch using Next.js, TypeScript, Tailwind CSS, SWR, Supabase and more.</p>
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/satriabahari/satria.com)](https://github.com/satriabahari/satria.com/stargazers)
 [![Depfu](https://badges.depfu.com/badges/02483ebb21fdb2182a66a28b68d1b7b0/status.svg)](https://depfu.com)
@@ -20,6 +20,8 @@ I use this platform to share projects, insights, and resources. The site is cons
 Feel free to explore the source code, use it as inspiration, or fork it as a template under the provided license. If you find this project useful, consider giving it a star ⭐.
 
 Have feedback, ideas, or questions? Don’t hesitate to reach out! 🙌
+
+— ntrungduong
 
 ---
 

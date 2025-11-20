@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     name: METADATA.creator,
     url: METADATA.openGraph.url,
   },
+   verification: {
+    google: "ARDjnOa2rctFLJ7Ee9iKmHmxU1_cQRwDnquDp-GySVA",
+  },
   openGraph: {
     images: METADATA.profile,
     url: METADATA.openGraph.url,

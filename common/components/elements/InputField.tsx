@@ -9,8 +9,8 @@ import {
 interface RadioInputProps<TFormValue extends FieldValues> {
   register: UseFormRegister<TFormValue>;
   name: Path<TFormValue>;
-  error: FieldErrors;
-  rule?: RegisterOptions;
+  error: FieldErrors<TFormValue>;
+  rule?: RegisterOptions<TFormValue, Path<TFormValue>>;
   isTextArea?: boolean;
   placeholder?: string;
   rows?: number;
@@ -25,8 +25,9 @@ const InputField = <TFormValue extends FieldValues>({
   rows = 2,
   register,
 }: RadioInputProps<TFormValue>) => {
+  const nameStr = String(name);
   const renderPlaceholder =
-    placeholder || name.charAt(0).toUpperCase() + name.slice(1);
+    placeholder || nameStr.charAt(0).toUpperCase() + nameStr.slice(1);
   return (
     <div className="w-full space-y-2">
       {isTextArea ? (

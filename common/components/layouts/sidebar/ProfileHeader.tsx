@@ -32,7 +32,7 @@ const ProfileHeader = ({ expandMenu, imageSize }: ProfileHeaderProps) => {
 
       <div className="mt-1 flex items-center gap-2 lg:mt-4">
         <Link href="/" passHref>
-          <h2 className="flex-grow text-lg font-medium lg:text-xl">Nguyễn Trùng Dương</h2>
+          <h2 className="flex-grow text-lg font-medium lg:text-xl">Trùng Dương</h2>
         </Link>
 
         <Tooltip title="Verified">

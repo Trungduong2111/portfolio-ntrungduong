@@ -62,24 +62,7 @@ Follow these steps to run the project locally:
 
 Using Git:
 ```bash
-git clone https://github.com/satriabahari/satriabahari.my.id
-```
-
-Using `create-next-app`:
-```bash
-npx create-next-app -e https://github.com/satriabahari/satriabahari.my.id project-name
-```
-
-Using `degit`:
-```bash
-npx degit satriabahari/satriabahari.my.id YOUR_APP_NAME
-```
-
-Or deploy directly to Vercel / Netlify:
-
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/satriabahari/satriabahari.my.id)  
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/satriabahari/satriabahari.my.id)
-
+git clone https://github.com/Trungduong2111/portfolio-ntrungduong.git
 ---
 
 ### 2. Install Dependencies

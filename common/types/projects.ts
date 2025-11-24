@@ -10,6 +10,7 @@ export type ProjectItem = {
   content?: string | null;
   is_show: boolean;
   is_featured: boolean;
+  list_img?: string[];
 };
 
 export type ProjectItemProps = {

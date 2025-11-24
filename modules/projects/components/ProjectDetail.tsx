@@ -7,8 +7,17 @@ import { ProjectItem } from '@/common/types/projects';
 import { STACKS } from '@/common/constants/stacks';
 
 import ProjectLink from './ProjectLink';
+import ImageSlider from '@/common/components/elements/ImageSlider ';
 
-const ProjectDetail = ({ title, image, stacks, link_demo, link_github, content }: ProjectItem) => {
+const ProjectDetail = ({
+  title,
+  image,
+  stacks,
+  link_demo,
+  link_github,
+  content,
+  list_img,
+}: ProjectItem) => {
   const t = useTranslations('ProjectsPage');
 
   return (
@@ -34,15 +43,18 @@ const ProjectDetail = ({ title, image, stacks, link_demo, link_github, content }
       </div>
 
       <div className="overflow-hidden">
-        <Image
-          src={image}
-          alt={title}
-          width={1000}
-          height={400}
-          className="transition duration-500 hover:scale-[1.04]"
-        />
+        {list_img && list_img?.length > 0 ? (
+          <ImageSlider images={list_img} autoPlay={true} interval={3000} />
+        ) : (
+          <Image
+            src={image}
+            alt={title}
+            width={1000}
+            height={400}
+            className="transition duration-500 hover:scale-[1.04]"
+          />
+        )}
       </div>
-
       {content ? (
         <div className="mt-5 space-y-6 leading-[1.8] dark:text-neutral-300">
           <MDXComponent>{content}</MDXComponent>

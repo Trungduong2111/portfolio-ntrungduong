@@ -1,17 +1,17 @@
-import NextTopLoader from "nextjs-toploader";
-import Script from "next/script";
-import { getServerSession } from "next-auth";
-import { Analytics } from "@vercel/analytics/react";
-import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
-import type { Metadata } from "next";
-import "./globals.css";
+import NextTopLoader from 'nextjs-toploader';
+import Script from 'next/script';
+import { getServerSession } from 'next-auth';
+import { Analytics } from '@vercel/analytics/react';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import type { Metadata } from 'next';
+import './globals.css';
 
-import Layouts from "@/common/components/layouts";
-import ThemeProviderContext from "@/common/stores/theme";
-import NextAuthProvider from "@/SessionProvider";
-import { METADATA } from "@/common/constants/metadata";
-import { onestSans } from "@/common/styles/fonts";
+import Layouts from '@/common/components/layouts';
+import ThemeProviderContext from '@/common/stores/theme';
+import NextAuthProvider from '@/SessionProvider';
+import { METADATA } from '@/common/constants/metadata';
+import { onestSans } from '@/common/styles/fonts';
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -68,7 +68,7 @@ const RootLayout = async ({
       <Script
         defer
         src="https://cloud.umami.is/script.js"
-        data-website-id="91c868c5-2a89-4a1d-b292-56c40ea30137"
+        data-website-id="5251ab34-54b7-4b51-a9be-fe0da8c1804e"
       ></Script>
       <body className={onestSans.className}>
         <NextTopLoader

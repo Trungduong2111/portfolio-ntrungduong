@@ -15,26 +15,41 @@ import { onestSans } from "@/common/styles/fonts";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NODE_ENV === "development"
-      ? "http://localhost:3000"
-      : process.env.DOMAIN || "",
+    process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : process.env.DOMAIN || ''
   ),
+
+  title: {
+    default: 'ntrungduong | Personal Website',
+    template: '%s | ntrungduong',
+  },
+
   description: METADATA.description,
   keywords: METADATA.keyword,
   creator: METADATA.creator,
+
   authors: {
     name: METADATA.creator,
     url: METADATA.openGraph.url,
   },
-   verification: {
-    google: "ARDjnOa2rctFLJ7Ee9iKmHmxU1_cQRwDnquDp-GySVA",
+
+  verification: {
+    google: 'ARDjnOa2rctFLJ7Ee9iKmHmxU1_cQRwDnquDp-GySVA',
   },
+
   openGraph: {
+    title: 'ntrungduong | Personal Website',
+    description: METADATA.description,
     images: METADATA.profile,
     url: METADATA.openGraph.url,
     siteName: METADATA.openGraph.siteName,
     locale: METADATA.openGraph.locale,
-    type: "website",
+    type: 'website',
+  },
+
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 };
 

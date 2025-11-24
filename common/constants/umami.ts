@@ -15,16 +15,10 @@ export const UMAMI_ACCOUNT = {
   is_active: true,
   websites: [
     {
-      domain: "ntrungduong.site",
+      domain: "portfolio-ntrungduong.vercel.app",
       website_id: process.env.UMAMI_WEBSITE_ID_SITE,
       umami_url:
-        "https://us.umami.is/share/wg6XA2bPFWg8Qc7r/www.ntrungduong.site",
-    },
-    {
-      domain: "ntrungduong.my.id",
-      website_id: process.env.UMAMI_WEBSITE_ID_MYID,
-      umami_url:
-        "https://cloud.umami.is/share/YBbXz2wWG0lCgSLt/www.ntrungduong.my.id",
+        "https://cloud.umami.is/share/uu6q1cdJDpcnHy17",
     },
   ],
 };

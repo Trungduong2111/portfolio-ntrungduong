@@ -12,6 +12,7 @@ import ThemeProviderContext from '@/common/stores/theme';
 import NextAuthProvider from '@/SessionProvider';
 import { METADATA } from '@/common/constants/metadata';
 import { onestSans } from '@/common/styles/fonts';
+import StructuredData from '@/common/components/elements/StructuredData';
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -19,8 +20,8 @@ export const metadata: Metadata = {
   ),
 
   title: {
-    default: 'ntrungduong | Personal Website',
-    template: '%s | ntrungduong',
+    default: 'Nguyễn Trùng Dương | Frontend Developer & Automation Tester | Personal Website',
+    template: '%s | Nguyễn Trùng Dương',
   },
 
   description: METADATA.description,
@@ -37,7 +38,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: 'ntrungduong | Personal Website',
+    title: 'Nguyễn Trung Dương | Frontend Developer & Automation Tester | Personal Website',
     description: METADATA.description,
     images: METADATA.profile,
     url: METADATA.openGraph.url,
@@ -70,6 +71,9 @@ const RootLayout = async ({
         src="https://cloud.umami.is/script.js"
         data-website-id="5251ab34-54b7-4b51-a9be-fe0da8c1804e"
       ></Script>
+      <head>
+        <StructuredData />
+      </head>
       <body className={onestSans.className}>
         <NextTopLoader
           color="#4ade80"

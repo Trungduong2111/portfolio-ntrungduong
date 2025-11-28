@@ -28,10 +28,10 @@ export function WorldMap({
   onCountryClick,
 }: WorldMapProps) {
   const t = useTranslations('DashboardPage');
-  
+
   const [tooltip, setTooltip] = useState<{
     country: string;
-    count: number;
+    count?: number;
   } | null>(null);
 
   // Tính phần trăm cho data
@@ -93,6 +93,10 @@ export function WorldMap({
       setTooltip({
         country: COUNTRY_NAMES[code] || code,
         count: countryData.y,
+      });
+    } else {
+      setTooltip({
+        country: COUNTRY_NAMES[code] || code,
       });
     }
   };
@@ -160,9 +164,11 @@ export function WorldMap({
           }}
         >
           <div style={{ fontWeight: 600, marginBottom: '4px' }}>{tooltip.country}</div>
-          <div style={{ fontSize: '14px', opacity: 0.8 }}>
-            {formatNumber(tooltip.count)} visitors
-          </div>
+          {tooltip.count && (
+            <div style={{ fontSize: '14px', opacity: 0.8 }}>
+              {formatNumber(tooltip.count)} visitors
+            </div>
+          )}
         </div>
       )}
     </div>

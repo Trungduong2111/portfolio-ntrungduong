@@ -1,5 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
-import { getPageViewsByDataRange, getWebsiteStats } from "@/services/umami";
+import { getPageViewsByDataRange, getWebsiteStats, getMetricsMapData } from "@/services/umami";
 import { UMAMI_ACCOUNT } from "@/common/constants/umami";
 
 export const GET = async (req: NextRequest) => {
@@ -19,6 +19,7 @@ export const GET = async (req: NextRequest) => {
     }
 
     const pageViews = await getPageViewsByDataRange(domain);
+    const metricsMapData = await getMetricsMapData(domain);
     const stats = await getWebsiteStats(domain);
 
     if (pageViews.status >= 400 || stats.status >= 400) {
@@ -35,6 +36,7 @@ export const GET = async (req: NextRequest) => {
       {
         ...pageViews.data,
         websiteStats: stats.data,
+        metricsMap: metricsMapData?.data,
       },
       { status: 200 },
     );

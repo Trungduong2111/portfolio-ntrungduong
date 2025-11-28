@@ -73,7 +73,9 @@
         "sessions": "Sessions",
         "page_views": "Page Views"
       },
-      "filter_placeholder": "Filter domain..."
+      "filter_placeholder": "Filter domain...",
+      "geographic_distribution": "Geographic Distribution",
+      "visitor_traffic_by_country": "Visitor traffic by country"
     },
     "github": {
       "title": "GitHub Contributions",

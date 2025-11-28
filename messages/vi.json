@@ -70,7 +70,9 @@
         "sessions": "Phiên truy cập",
         "page_views": "Lượt xem trang"
       },
-      "filter_placeholder": "Lọc theo tên miền..."
+      "filter_placeholder": "Lọc theo tên miền...",
+      "geographic_distribution": "Phân bố địa lý",
+      "visitor_traffic_by_country": "Lưu lượng truy cập theo quốc gia"
     },
     "github": {
       "title": "Đóng góp GitHub",

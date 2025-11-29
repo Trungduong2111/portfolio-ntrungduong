@@ -37,7 +37,7 @@ const CareerCard = ({
   const durationMonths = differenceInMonths(endDate, startDate) % 12;
 
   const yearText =
-    locale == "en" ? `year${durationYears > 1 ? "s" : ""}` : "tahun";
+    locale == "en" ? `year${durationYears > 1 ? "s" : ""}` : "năm";
 
   let durationText = "";
   if (durationYears > 0) {

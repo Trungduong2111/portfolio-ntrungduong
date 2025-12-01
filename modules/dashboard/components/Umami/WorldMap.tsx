@@ -22,7 +22,7 @@ function calculatePercentages(data: CountryData[]): CountryData[] {
 export function WorldMap({
   data,
   theme = 'light',
-  height = '500px',
+  height = '',
   className = '',
   style = {},
   onCountryClick,

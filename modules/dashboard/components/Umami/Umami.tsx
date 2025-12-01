@@ -70,11 +70,11 @@ const Umami = () => {
                 {t('umami.visitor_traffic_by_country')}
               </p>
             </div>
-            <div className="relative h-[450px] w-full overflow-hidden">
+            <div className="relative h-fit w-full overflow-hidden">
               <WorldMap
                 data={data?.metricsMap || []}
                 theme="light"
-                height="450px"
+                height=""
                 className="w-full"
                 style={{ maxWidth: '100%' }}
               />
